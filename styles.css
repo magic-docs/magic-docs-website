@@ -1,8 +1,8 @@
 :root {
   --bg: #ffffff;
   --bg-alt: #f7f8fb;
-  --text: #17213a;
-  --muted: #4a587a;
+  --text: #ffffff;
+  --muted: #ffffff;
   --primary: #2354d8;
   --border: #dde3f1;
 }
@@ -67,7 +67,7 @@ a:hover {
 }
 
 .nav-list a {
-  color: var(--text);
+  color: #000000;
   font-weight: 600;
   font-size: 0.95rem;
 }
@@ -76,8 +76,24 @@ a:hover {
   padding: 4rem 0;
 }
 
+.hero {
+  background-image: url("./media/background.png");
+  background-size: auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
 .section-alt {
   background: var(--bg-alt);
+}
+
+#from-code-to-clarity {
+  background: #2b4842;
+}
+
+#from-code-to-clarity .about-grid article {
+  background: #2b4842;
+  border-color: #2b4842;
 }
 
 .hero-grid {
@@ -85,6 +101,73 @@ a:hover {
   grid-template-columns: 1.2fr 1fr;
   gap: 2.5rem;
   align-items: center;
+}
+
+#what-we-offer,
+#what-we-offer h2,
+#what-we-offer h3,
+#what-we-offer h4,
+#what-we-offer p,
+#what-we-offer li {
+  color: #000000;
+}
+
+#what-we-offer {
+  background: #f3f3f5;
+}
+
+#what-we-offer .card {
+  background: #fdfdfd;
+}
+
+#microsoft-apps,
+#microsoft-apps h2,
+#microsoft-apps h3,
+#microsoft-apps p {
+  color: #000000;
+}
+
+#microsoft-apps {
+  background: #f2f6fa;
+}
+
+#microsoft-apps .card {
+  background: #f2f6fa;
+}
+
+#microsoft-apps .card h3 a {
+  color: var(--primary);
+}
+
+#get-in-touch,
+#get-in-touch h2,
+#get-in-touch p,
+#get-in-touch label,
+#get-in-touch input,
+#get-in-touch textarea,
+#get-in-touch select,
+#get-in-touch option,
+#get-in-touch span,
+#get-in-touch a,
+#get-in-touch button {
+  color: #000000;
+}
+
+.app-title-row {
+  margin-left: 0.35rem;
+}
+
+.app-title-row a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.app-title-row img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
 }
 
 h1,
@@ -210,13 +293,28 @@ ul {
   color: var(--muted);
 }
 
-.contact-details span {
-  margin-left: 0.8rem;
+.contact-details {
+  display: inline-grid;
+  gap: 0.35rem;
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 52px auto;
+  align-items: baseline;
+  column-gap: 0.45rem;
+}
+
+.contact-label {
+  margin-left: 0;
 }
 
 .site-footer {
   border-top: 1px solid var(--border);
-  background: #f6f8fe;
+  background-image: url("./media/background.png");
+  background-size: auto;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .footer-inner {
@@ -225,6 +323,38 @@ ul {
   flex-direction: column;
   justify-content: center;
   gap: 0.35rem;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.footer-left a[aria-label="LinkedIn profile"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 0.1rem;
+}
+
+.linkedin-logo {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.footer-copy {
+  text-align: right;
 }
 
 .footer-inner p {
